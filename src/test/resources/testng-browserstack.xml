@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    BROWSERSTACK PARALLEL EXECUTION SUITE
+    ──────────────────────────────────────
+    5 parallel threads. One per platform.
+    Each <test> block = one BrowserStack session.
+
+    PARALLEL STRATEGY:
+    parallel="tests"  → Each <test> node runs in its own thread.
+    thread-count="5"  → Maximum 5 concurrent threads.
+
+    WHY parallel="tests" and NOT parallel="methods"?
+    - parallel="methods" would run the same test method
+      across multiple threads sharing one <test> config.
+    - parallel="tests" gives each platform its own
+      isolated configuration, driver, and session.
+    - This is the correct pattern for cross-browser grids.
+
+    Run with: mvn test -P browserstack
+-->
+<suite name="ElPais-BrowserStack-Suite" verbose="2" parallel="tests" thread-count="5"
+       data-provider-thread-count="5">
+
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+    </listeners>
+
+    <!-- ═══════════════════════════════════════════
+         THREAD 1 — Windows 11 + Chrome (Latest)
+    ═══════════════════════════════════════════ -->
+    <test name="Windows-Chrome" preserve-order="true">
+
+        <parameter name="platform" value="windows_chrome"/>
+
+        <classes>
+            <class name="com.assignment.tests.ElPaisOpinionTest">
+                <methods>
+                    <include name="testOpinionArticleScraping"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+    <!-- ═══════════════════════════════════════════
+         THREAD 2 — Windows 11 + Firefox (Latest)
+    ═══════════════════════════════════════════ -->
+    <test name="Windows-Firefox" preserve-order="true">
+
+        <parameter name="platform" value="windows_firefox"/>
+
+        <classes>
+            <class name="com.assignment.tests.ElPaisOpinionTest">
+                <methods>
+                    <include name="testOpinionArticleScraping"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+    <!-- ═══════════════════════════════════════════
+         THREAD 3 — macOS Sonoma + Safari 17
+    ═══════════════════════════════════════════ -->
+    <test name="macOS-Safari" preserve-order="true">
+
+        <parameter name="platform" value="mac_safari"/>
+
+        <classes>
+            <class name="com.assignment.tests.ElPaisOpinionTest">
+                <methods>
+                    <include name="testOpinionArticleScraping"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+    <!-- ═══════════════════════════════════════════
+         THREAD 4 — iPhone 15 (Real Device)
+         Browser: Safari on iOS 17
+    ═══════════════════════════════════════════ -->
+    <test name="iPhone-Real-Device" preserve-order="true">
+
+        <parameter name="platform" value="iphone"/>
+
+        <classes>
+            <class name="com.assignment.tests.ElPaisOpinionTest">
+                <methods>
+                    <include name="testOpinionArticleScraping"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+    <!-- ═══════════════════════════════════════════
+         THREAD 5 — Samsung Galaxy S23 (Real Device)
+         Browser: Chrome on Android 13
+    ═══════════════════════════════════════════ -->
+    <test name="Android-Real-Device" preserve-order="true">
+
+        <parameter name="platform" value="android"/>
+
+        <classes>
+            <class name="com.assignment.tests.ElPaisOpinionTest">
+                <methods>
+                    <include name="testOpinionArticleScraping"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>

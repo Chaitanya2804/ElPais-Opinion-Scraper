@@ -1,0 +1,19 @@
+# BrowserStack SDK Configuration
+# Credentials are read from environment / .env
+# DO NOT hardcode credentials here
+
+userName: chaitanyashah_iuN3ZT
+accessKey: jNNTaaW3zRhLeykfcume
+
+buildName: ElPais-Opinion-Scraper
+projectName: BrowserStack-CE-Evaluation
+buildTag: CE-Evaluation
+
+# Session settings
+debug: true
+networkLogs: true
+consoleLogs: info
+visual: true
+
+# Framework
+framework: testng

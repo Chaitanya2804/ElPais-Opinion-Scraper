@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Android-Real-Device</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">33.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">macOS-Safari</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">35.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t3">iPhone-Real-Device</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">92.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t4">Windows-Chrome</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">198.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t5">Windows-Firefox</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">212.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">2</td><td class="numi">2</td><td class="numi_attn">1</td><td class="numi_attn">2</td><td class="numi">212.1 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Android-Real-Device &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td>com.assignment.tests.ElPaisOpinionTest</td><td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td>1771485802880</td><td class="numi">33167</td></tr>
+<tr><th colspan="5">Android-Real-Device &#8212; skipped</th></tr>
+<tr class="skippedodd"><td>com.assignment.tests.ElPaisOpinionTest</td><td><a href="#m2"><b>testOpinionArticleScraping</b>  ("Scrape El País Opinion articles and analyze titles")</a></td><td class="numi">1</td><td>1771485836053</td><td class="numi">0</td></tr>
+<tr id="t2"><th colspan="5">macOS-Safari &#8212; failed</th></tr>
+<tr class="failedodd"><td>com.assignment.tests.ElPaisOpinionTest</td><td><a href="#m3"><b>testOpinionArticleScraping</b>  ("Scrape El País Opinion articles and analyze titles")</a></td><td class="numi">1</td><td>1771485811389</td><td class="numi">24818</td></tr>
+<tr id="t3"><th colspan="5">iPhone-Real-Device &#8212; failed</th></tr>
+<tr class="failedodd"><td>com.assignment.tests.ElPaisOpinionTest</td><td><a href="#m4"><b>testOpinionArticleScraping</b>  ("Scrape El País Opinion articles and analyze titles")</a></td><td class="numi">1</td><td>1771485824905</td><td class="numi">68304</td></tr>
+<tr id="t4"><th colspan="5">Windows-Chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td>com.assignment.tests.ElPaisOpinionTest</td><td><a href="#m5"><b>testOpinionArticleScraping</b>  ("Scrape El País Opinion articles and analyze titles")</a></td><td class="numi">1</td><td>1771485818364</td><td class="numi">180808</td></tr>
+<tr id="t5"><th colspan="5">Windows-Firefox &#8212; passed</th></tr>
+<tr class="passedodd"><td>com.assignment.tests.ElPaisOpinionTest</td><td><a href="#m6"><b>testOpinionArticleScraping</b>  ("Scrape El País Opinion articles and analyze titles")</a></td><td class="numi">1</td><td>1771485826714</td><td class="numi">186181</td></tr>
+</table>
+<h1>Android-Real-Device</h1>
+<h2 id="m1">com.assignment.tests.ElPaisOpinionTest:setUp</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>android</td>
+</tr>
+<tr><td>
+<div class="stacktrace">java.lang.RuntimeException: Failed to create BrowserStack RemoteWebDriver: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=142.0.7444.171)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.2&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [68d7eefd05c7423f124e6f0b26a07e30e7fa5eac, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: uiautomator2, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverExecutable: /usr/local/.browserstack/de..., chromedriverPort: 18084, databaseEnabled: false, desired: {automationName: uiautomator2, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverExecutable: /usr/local/.browserstack/de..., chromedriverPort: 18084, deviceName: android, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://31.6...., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, suppressKillServer: true, systemPort: 8204, udid: RZCW40CYB5V}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S911B, deviceName: RZCW40CYB5V, deviceScreenDensity: 480, deviceScreenSize: 1080x2340, deviceUDID: RZCW40CYB5V, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://31.6...., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 81, suppressKillServer: true, systemPort: 8204, takesScreenshot: true, udid: RZCW40CYB5V, viewportRect: {height: 2034, left: 0, top: 81, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 68d7eefd05c7423f124e6f0b26a07e30e7fa5eac
+	at com.assignment.scrapping.driver.DriverManager.createRemoteDriver(DriverManager.java:112)
+	at com.assignment.base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:134)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:114)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:304)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:64)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:464)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:395)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.UnsupportedCommandException: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=142.0.7444.171)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.2&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [68d7eefd05c7423f124e6f0b26a07e30e7fa5eac, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: uiautomator2, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverExecutable: /usr/local/.browserstack/de..., chromedriverPort: 18084, databaseEnabled: false, desired: {automationName: uiautomator2, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverExecutable: /usr/local/.browserstack/de..., chromedriverPort: 18084, deviceName: android, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://31.6...., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, suppressKillServer: true, systemPort: 8204, udid: RZCW40CYB5V}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S911B, deviceName: RZCW40CYB5V, deviceScreenDensity: 480, deviceScreenSize: 1080x2340, deviceUDID: RZCW40CYB5V, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://31.6...., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 81, suppressKillServer: true, systemPort: 8204, takesScreenshot: true, udid: RZCW40CYB5V, viewportRect: {height: 2034, left: 0, top: 81, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 68d7eefd05c7423f124e6f0b26a07e30e7fa5eac
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1035)
+	at com.assignment.scrapping.driver.DriverManager.applyTimeouts(DriverManager.java:145)
+	at com.assignment.scrapping.driver.DriverManager.createRemoteDriver(DriverManager.java:105)
+	... 39 more
+</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.assignment.tests.ElPaisOpinionTest:testOpinionArticleScraping</h2>
+<div>
+<div class="stacktrace">java.lang.RuntimeException: Failed to create BrowserStack RemoteWebDriver: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=142.0.7444.171)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.2&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [68d7eefd05c7423f124e6f0b26a07e30e7fa5eac, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: uiautomator2, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverExecutable: /usr/local/.browserstack/de..., chromedriverPort: 18084, databaseEnabled: false, desired: {automationName: uiautomator2, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverExecutable: /usr/local/.browserstack/de..., chromedriverPort: 18084, deviceName: android, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://31.6...., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, suppressKillServer: true, systemPort: 8204, udid: RZCW40CYB5V}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S911B, deviceName: RZCW40CYB5V, deviceScreenDensity: 480, deviceScreenSize: 1080x2340, deviceUDID: RZCW40CYB5V, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://31.6...., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 81, suppressKillServer: true, systemPort: 8204, takesScreenshot: true, udid: RZCW40CYB5V, viewportRect: {height: 2034, left: 0, top: 81, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 68d7eefd05c7423f124e6f0b26a07e30e7fa5eac
+	at com.assignment.scrapping.driver.DriverManager.createRemoteDriver(DriverManager.java:112)
+	at com.assignment.base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:134)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:114)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:304)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:64)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:464)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:395)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.UnsupportedCommandException: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=142.0.7444.171)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.2&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [68d7eefd05c7423f124e6f0b26a07e30e7fa5eac, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: uiautomator2, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverExecutable: /usr/local/.browserstack/de..., chromedriverPort: 18084, databaseEnabled: false, desired: {automationName: uiautomator2, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverExecutable: /usr/local/.browserstack/de..., chromedriverPort: 18084, deviceName: android, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://31.6...., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, suppressKillServer: true, systemPort: 8204, udid: RZCW40CYB5V}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S911B, deviceName: RZCW40CYB5V, deviceScreenDensity: 480, deviceScreenSize: 1080x2340, deviceUDID: RZCW40CYB5V, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://31.6...., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 81, suppressKillServer: true, systemPort: 8204, takesScreenshot: true, udid: RZCW40CYB5V, viewportRect: {height: 2034, left: 0, top: 81, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 68d7eefd05c7423f124e6f0b26a07e30e7fa5eac
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1035)
+	at com.assignment.scrapping.driver.DriverManager.applyTimeouts(DriverManager.java:145)
+	at com.assignment.scrapping.driver.DriverManager.createRemoteDriver(DriverManager.java:105)
+	... 39 more
+</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>macOS-Safari</h1>
+<h2 id="m3">com.assignment.tests.ElPaisOpinionTest:testOpinionArticleScraping</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: A node reference could not be resolved: Node with identifier &apos;node-FD09DF5C-DD17-4E68-B6C6-BEA58D4C8AA2&apos; was not found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.2&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ec13018ea577c634919e7267abf7cb0f4f4f97e6, getElementAttribute {id=node-FD09DF5C-DD17-4E68-B6C6-BEA58D4C8AA2, name=href}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 17.3, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 23D56, safari:platformVersion: 14.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: ec13018ea577c634919e7267abf..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Element: [[RemoteWebDriver: Safari on mac (ec13018ea577c634919e7267abf7cb0f4f4f97e6)] -&gt; css selector: section article h2 a, .opinion article h2 a, article.opinion-article h2 a, h2.article-title a]
+Session ID: ec13018ea577c634919e7267abf7cb0f4f4f97e6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
+	at com.assignment.scrapping.pages.OpinionPage.collectArticleUrls(OpinionPage.java:131)
+	at com.assignment.scrapping.pages.OpinionPage.scrapeArticles(OpinionPage.java:74)
+	at com.assignment.tests.ElPaisOpinionTest.testOpinionArticleScraping(ElPaisOpinionTest.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:134)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:114)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:304)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:64)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:464)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:395)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>iPhone-Real-Device</h1>
+<h2 id="m4">com.assignment.tests.ElPaisOpinionTest:testOpinionArticleScraping</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: a[href*=&apos;/opinion&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.2&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {automationName: xcuitest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-000145511A38A01E, useXctestrunFile: true, webStorageEnabled: false}
+Session ID: 15e878c1dcf13bd1eadc54cd4eb8e9808b2dfc15
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.assignment.scrapping.utils.WaitUtil.waitForClickable(WaitUtil.java:45)
+	at com.assignment.scrapping.pages.BasePage.click(BasePage.java:59)
+	at com.assignment.scrapping.pages.HomePage.navigateToOpinion(HomePage.java:84)
+	at com.assignment.tests.ElPaisOpinionTest.testOpinionArticleScraping(ElPaisOpinionTest.java:68)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:134)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:114)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:304)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:64)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:464)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:395)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Windows-Chrome</h1>
+<h2 id="m5">com.assignment.tests.ElPaisOpinionTest:testOpinionArticleScraping</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Windows-Firefox</h1>
+<h2 id="m6">com.assignment.tests.ElPaisOpinionTest:testOpinionArticleScraping</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
