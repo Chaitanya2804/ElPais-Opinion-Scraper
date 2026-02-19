@@ -166,7 +166,7 @@ og:image as reliable fallback (always article-specific)
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/elpais-browserstack-automation.git
+git clone (https://github.com/Chaitanya2804/ElPais-Opinion-Scraper)
 cd elpais-browserstack-automation
 ```
 
