@@ -1,0 +1,46 @@
+{
+  "thread" : "41",
+  "timestamp" : "2026-02-19T14:40:10.681487",
+  "articles" : [ {
+    "index" : 1,
+    "titleSpanish" : "Caiga quien caiga",
+    "titleEnglish" : "Whoever falls falls",
+    "content" : "La inmediata dimisión del comisario principal José Ángel González Jiménez, de 66 años, como director adjunto operativo de la Policía, el cargo uniformado más alto del cuerpo, era la única salida posible después de que se conociese el martes que un juzgado madrileño le ha citado como investigado por una querella por violación presentada en su contra por una subordinada. La funcionaria le acusa de haberla agredido sexualmente y coaccionado de forma sistemática después para que guardara silencio. El ministerio suspendió este miércoles de su puesto a su número dos, el comisario Óscar San Juan, acusado por la querellante de presionarla también para que callase.",
+    "imageUrl" : "https://imagenes.elpais.com/resizer/v2/A4DNSMELERDQZCEIGDOQSA6NGA.jpg?auth=b63e7c8b66d7e3e334085c74c3d583a70d08ff3f9941e900a782cd124c6ec489&width=414",
+    "localImagePath" : "output/images/article_1_cover.jpg",
+    "articleUrl" : "https://elpais.com/opinion/2026-02-19/caiga-quien-caiga.html"
+  }, {
+    "index" : 2,
+    "titleSpanish" : "Negar un techo por el color de piel",
+    "titleEnglish" : "Denying a roof because of skin color",
+    "content" : "El racismo en el alquiler de viviendas es una perversa combinación de dos de los mayores problemas que ponen en riesgo la convivencia social: la crisis habitacional y el avance del discurso antinmigración. El problema que más preocupa a los españoles, según el CIS, es la vivienda, que se ha encarecido un 70% en los últimos 10 años. Un coste al que hay que sumar las exigencias añadidas que sufren los inmigrantes a la hora de alquilar: el 99% de las agencias inmobiliarias aceptan cláusulas racistas de los propietarios, según datos de Provivienda de 2025, especialmente contra personas de África, Asia y Latinoamérica. Es la tormenta perfecta para gran parte de los ciudadanos procedentes de otros países, que suponen ya la quinta parte de nuestra sociedad (10 millones, sobre una población de 49,5 millones). La discriminación en el alquiler impide su integración social y laboral, y los condena a habitar en zonas convertidas en guetos, que a su vez realimentan los prejuicios.",
+    "imageUrl" : "https://imagenes.elpais.com/resizer/v2/MLJILORPLNEVBLUZVX3E5R6FZY.jpg?auth=5d2ed914530487c80efa8dccb15be4c2997533761ae4ef948295fec6f95aa71c&width=414",
+    "localImagePath" : "output/images/article_2_cover.jpg",
+    "articleUrl" : "https://elpais.com/opinion/2026-02-19/negar-un-techo-por-el-color-de-piel.html"
+  }, {
+    "index" : 3,
+    "titleSpanish" : "La clase media no es un invento facha",
+    "titleEnglish" : "The middle class is not a façade invention",
+    "content" : "Se ha puesto de moda negar que la clase media haya existido alguna vez en España. Algunos dirán que todo es clase obrera; algunos, porque son ciudadanos que dependen de su trabajo, y otros, que es porque no poseen los medios de producción. El sistema tiende a negarle a la gente aquello que ya no puede ofrecerle. La realidad es que si hoy la Constitución de 1978 se ve impugnada por el auge de la ultraderecha es porque —probablemente— los ideales clasemedieros alguna vez existieron en nuestro país de forma más realista que ahora....\nSuscríbete para seguir leyendo\nLee sin límites\nSEGUIR LEYENDO\nYa soy suscriptor",
+    "imageUrl" : "https://imagenes.elpais.com/resizer/v2/EQTZF2ELPRNUVJVDONJOI3HKRQ.jpg?auth=be4d3e34cedc6702e588a75e47eb388316062e72fcd1a9c8f9e3b9415fce5288&width=414",
+    "localImagePath" : "output/images/article_3_cover.jpg",
+    "articleUrl" : "https://elpais.com/opinion/2026-02-19/la-clase-media-no-es-un-invento-facha.html"
+  }, {
+    "index" : 4,
+    "titleSpanish" : "Fronteras ‘inteligentes’, democracias negligentes",
+    "titleEnglish" : "[TRANSLATION FAILED] Fronteras ‘inteligentes’, democracias negligentes",
+    "content" : "La ciudad china de Chongqing tenía en 2019 unos 15 millones de habitantes y 2,6 millones de cámaras: una por cada seis personas. Desde entonces hasta ahora, esa proporción podría haberse disparado hasta las dos cámaras por persona. Apoyado en tecnologías de identificación biométrica, este despliegue forma parte del denominado Proyecto Skynet, un monumental ejercicio de vigilancia pública que permite a las autoridades prevenir y controlar cualquier posible amenaza a la seguridad nacional...\nSuscríbete para seguir leyendo\nLee sin límites\nSEGUIR LEYENDO\nYa soy suscriptor",
+    "imageUrl" : "https://imagenes.elpais.com/resizer/v2/QYBHDBZLOFB5RDJOTPURMLMLBA.jpg?auth=2a23f69850ea4478f2e095658815af3cd2ad1ed98d5b7896af5faa5f87cff304&width=414",
+    "localImagePath" : "output/images/article_4_cover.jpg",
+    "articleUrl" : "https://elpais.com/opinion/2026-02-19/fronteras-inteligentes-democracias-negligentes.html"
+  }, {
+    "index" : 5,
+    "titleSpanish" : "‘Moteras iraníes’",
+    "titleEnglish" : "'Iranian bikers'",
+    "content" : "[Article Preview — Full content behind paywall]\n\nEn Irán, las mujeres no tienen reconocido oficialmente el derecho a conducir motocicletas y, por tanto, no se les conceden permisos. Aun así, las iraníes llevan años plantando cara a estas restricciones. Durante décadas han convertido sus propios cuerpos en herramientas de resistencia; cada vez que se suben a una moto toman una decisión consciente de traspasar los límites impuestos en nombre de la ley, la tradición o el miedo",
+    "imageUrl" : "https://imagenes.elpais.com/resizer/v2/RMHO45HCOZGJTD6U2ADLKGCBOE.jpg?auth=71032ebfcd95e60e8ac13a7fe0186ee7407b059524de990d3c3e4265bc971e25&width=414",
+    "localImagePath" : "output/images/article_5_cover.jpg",
+    "articleUrl" : "https://elpais.com/opinion/2026-02-16/moteras-iranies.html"
+  } ],
+  "wordFrequency" : { }
+}
