@@ -9,18 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
-/**
- * Base class for all tests.
- * Handles WebDriver lifecycle:
- *   @BeforeMethod  → create driver (local or BrowserStack)
- *   @AfterMethod   → quit driver, mark BS session pass/fail
- *
- * Tests NEVER create or quit drivers themselves.
- * They only call getDriver().
- *
- * The 'platform' parameter is injected by TestNG XML.
- * When not provided (local run), defaults to "chrome".
- */
+
 public class BaseTest {
 
     protected final Logger logger = LogManager.getLogger(getClass());
@@ -63,12 +52,6 @@ public class BaseTest {
         logger.info("════════════════════════════════════════════════");
     }
 
-    // ── Helpers ──────────────────────────────────────
-
-    /**
-     * Sends pass/fail status to BrowserStack dashboard via JS executor.
-     * Only executes when running on BrowserStack (RemoteWebDriver).
-     */
     private void markBrowserStackSession(ITestResult result) {
         try {
             WebDriver driver = DriverManager.getDriver();
@@ -109,7 +92,6 @@ public class BaseTest {
         };
     }
 
-    /** Convenience method for all subclasses */
     protected WebDriver getDriver() {
         return DriverManager.getDriver();
     }

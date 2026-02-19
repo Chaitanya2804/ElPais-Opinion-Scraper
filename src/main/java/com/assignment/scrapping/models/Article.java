@@ -1,9 +1,6 @@
 package com.assignment.scrapping.models;
 
-/**
- * Plain data model representing a scraped El País article.
- * No Selenium, no API logic — pure data carrier.
- */
+
 public class Article {
 
     private int index;

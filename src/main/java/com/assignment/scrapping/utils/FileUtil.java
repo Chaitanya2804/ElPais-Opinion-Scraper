@@ -11,11 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-/**
- * Handles all file I/O operations.
- * Creates output directories, writes article text,
- * and serializes objects to JSON.
- */
+
 public class FileUtil {
 
     private static final Logger logger = LogManager.getLogger(FileUtil.class);
@@ -24,7 +20,6 @@ public class FileUtil {
 
     private FileUtil() {}
 
-    /** Ensures an output directory exists, creates it if not. */
     public static void ensureDirectory(String path) {
         File dir = new File(path);
         if (!dir.exists()) {
@@ -35,7 +30,6 @@ public class FileUtil {
         }
     }
 
-    /** Writes article text content to a .txt file */
     public static void saveArticleText(int index,
                                        String title,
                                        String content) {
@@ -63,7 +57,6 @@ public class FileUtil {
         }
     }
 
-    /** Serializes any object to a JSON file */
     public static void saveAsJson(Object obj, String filePath) {
         try {
             ensureDirectory(new File(filePath).getParent());
@@ -74,7 +67,6 @@ public class FileUtil {
         }
     }
 
-    /** Reads a text file to String */
     public static String readFile(String path) {
         try {
             return FileUtils.readFileToString(

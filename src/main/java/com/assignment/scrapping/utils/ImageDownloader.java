@@ -9,10 +9,7 @@ import java.io.File;
 import java.net.URI;
 import java.net.URL;
 
-/**
- * Downloads cover images from URLs and saves them locally.
- * Handles missing images, lazy-loaded src, and network failures gracefully.
- */
+
 public class ImageDownloader {
 
     private static final Logger logger =
@@ -23,13 +20,7 @@ public class ImageDownloader {
 
     private ImageDownloader() {}
 
-    /**
-     * Downloads image from URL and saves to output/images/
-     *
-     * @param imageUrl  The image URL (http/https)
-     * @param index     Article index (used in filename)
-     * @return          Local file path if successful, null otherwise
-     */
+
     public static String download(String imageUrl, int index) {
 
         if (imageUrl == null || imageUrl.isBlank()) {
@@ -79,14 +70,7 @@ public class ImageDownloader {
         }
     }
 
-    /**
-     * Attempts to resolve lazy-loaded image.
-     * El País often uses data-src instead of src for lazy loading.
-     *
-     * @param src      value of 'src' attribute
-     * @param dataSrc  value of 'data-src' attribute
-     * @return         The real image URL, or null
-     */
+
     public static String resolveImageUrl(String src, String dataSrc) {
         // Prefer data-src (lazy-loaded actual URL)
         if (dataSrc != null && !dataSrc.isBlank()

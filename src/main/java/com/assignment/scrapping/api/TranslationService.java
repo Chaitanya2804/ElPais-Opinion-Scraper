@@ -16,14 +16,6 @@ import org.apache.logging.log4j.Logger;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Translation using "Top Google Translate" on RapidAPI.
- *
- * Endpoint : POST https://top-google-translate.p.rapidapi.com/v3/translate
- * Headers  : X-RapidAPI-Key, X-RapidAPI-Host
- * Body     : JSON { "sl": "es", "tl": "en", "text": "your text" }
- * Response : { "translation": "translated text" }
- */
 public class TranslationService {
 
     private static final Logger logger =
@@ -97,13 +89,7 @@ public class TranslationService {
         }
     }
 
-    /**
-     * Handles multiple possible response structures:
-     *
-     * Format 1: { "translation": "..." }
-     * Format 2: { "data": { "translation": "..." } }
-     * Format 3: { "data": { "translations": [{ "translatedText": "..." }] } }
-     */
+
     private String parseTranslation(String json, String original) {
         try {
             JsonNode root = mapper.readTree(json);

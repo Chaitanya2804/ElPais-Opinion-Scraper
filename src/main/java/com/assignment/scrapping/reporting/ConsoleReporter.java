@@ -5,10 +5,7 @@ import com.assignment.scrapping.models.Article;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Formats and prints all output to console.
- * Keeps all print logic in one place — tests never call System.out directly.
- */
+
 public class ConsoleReporter {
 
     private static final String SEPARATOR =

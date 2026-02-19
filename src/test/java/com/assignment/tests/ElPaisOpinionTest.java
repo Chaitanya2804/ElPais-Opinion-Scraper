@@ -15,21 +15,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * Main test class for El País Opinion scraping.
- *
- * Flow:
- *  1. Open elpais.com → verify Spanish language
- *  2. Navigate to Opinion section
- *  3. Scrape first 5 articles (title, content, image)
- *  4. Translate titles ES → EN
- *  5. Print translated titles
- *  6. Analyze word frequency across titles
- *  7. Save all output to files
- *
- * Extends BaseTest → driver lifecycle handled automatically.
- * Each parallel thread runs this full flow independently.
- */
+//Main Test Class
+
 public class ElPaisOpinionTest extends BaseTest {
 
     // TranslationService is instantiated per test instance
@@ -40,14 +27,14 @@ public class ElPaisOpinionTest extends BaseTest {
     @Test(description = "Scrape El País Opinion articles and analyze titles")
     public void testOpinionArticleScraping() {
 
-        // ── STEP 1: Open Home Page ────────────────────
+
         ConsoleReporter.printSectionDivider("STEP 1: Opening El País");
         logger.info("Opening El País home page...");
 
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
 
-        // ── STEP 2: Verify Spanish Language ──────────
+
         ConsoleReporter.printSectionDivider("STEP 2: Language Verification");
         logger.info("Verifying page is in Spanish...");
 
@@ -63,7 +50,6 @@ public class ElPaisOpinionTest extends BaseTest {
         System.out.println("  ║    HTML lang attribute = 'es'            ║");
         System.out.println("  ╚══════════════════════════════════════════╝");
 
-        // ── STEP 3: Navigate to Opinion ──────────────
         ConsoleReporter.printSectionDivider("STEP 3: Navigating to Opinion");
         OpinionPage opinionPage = homePage.navigateToOpinion();
 
@@ -74,7 +60,6 @@ public class ElPaisOpinionTest extends BaseTest {
         System.out.println("  ✓ Opinion section loaded: "
                 + getDriver().getCurrentUrl());
 
-        // ── STEP 4: Scrape Articles ───────────────────
         ConsoleReporter.printSectionDivider("STEP 4: Scraping Articles");
         logger.info("Beginning article scrape...");
 
@@ -90,10 +75,8 @@ public class ElPaisOpinionTest extends BaseTest {
 
         ConsoleReporter.printArticlesInSpanish(articles);
 
-        // Save raw article text to output/articles/
         saveArticlesToFiles(articles);
 
-        // ── STEP 5: Translate Titles ──────────────────
         ConsoleReporter.printSectionDivider("STEP 5: Translating Titles");
         logger.info("Translating {} article titles...", articles.size());
 
@@ -107,10 +90,8 @@ public class ElPaisOpinionTest extends BaseTest {
             logger.info("Translated: '{}' → '{}'", spanish, english);
         }
 
-        // ── STEP 6: Print Translated Titles ──────────
         ConsoleReporter.printTranslatedTitles(articles);
 
-        // ── STEP 7: Word Frequency Analysis ──────────
         ConsoleReporter.printSectionDivider("STEP 7: Word Frequency Analysis");
         logger.info("Running word frequency analysis...");
 
@@ -143,7 +124,6 @@ public class ElPaisOpinionTest extends BaseTest {
             saveAnalysisToJson(articles, allRepeated);
         }
 
-        // ── STEP 8: Final Assertions ──────────────────
         validateResults(articles);
 
         logger.info("Test completed successfully for thread: {}",
@@ -177,10 +157,7 @@ public class ElPaisOpinionTest extends BaseTest {
         }
     }
 
-    /**
-     * Serializes final results to a JSON summary file.
-     * Named with thread ID to avoid file collisions in parallel runs.
-     */
+
     private void saveAnalysisToJson(List<Article> articles,
                                     Map<String, Integer> wordFrequency) {
         String threadId = String.valueOf(Thread.currentThread().getId());
@@ -198,9 +175,7 @@ public class ElPaisOpinionTest extends BaseTest {
         logger.info("Analysis JSON saved: {}", outputPath);
     }
 
-    /**
-     * Final validation assertions on scraped data quality.
-     */
+
     private void validateResults(List<Article> articles) {
         logger.info("Running final validations...");
 

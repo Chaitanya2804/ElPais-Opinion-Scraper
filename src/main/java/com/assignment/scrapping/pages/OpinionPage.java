@@ -21,7 +21,7 @@ public class OpinionPage extends BasePage {
 
     private final ConfigManager config = ConfigManager.getInstance();
 
-    // ── Locators ─────────────────────────────────────
+   //Locators
 
     // Article cards on the opinion listing page
     private static final By ARTICLE_CARDS =
@@ -58,12 +58,7 @@ public class OpinionPage extends BasePage {
 
     // ── Core Scraping Method ─────────────────────────
 
-    /**
-     * Scrapes the first N articles from the Opinion section.
-     * Opens each article, extracts data, returns to listing.
-     *
-     * @return List of populated Article objects
-     */
+
     public List<Article> scrapeArticles() {
         int count = config.getArticleCount();
         logger.info("Starting scrape of {} articles from Opinion section...", count);
@@ -110,11 +105,6 @@ public class OpinionPage extends BasePage {
 
     // ── Private Helpers ──────────────────────────────
 
-    /**
-     * Collects article URLs from the opinion listing page.
-     * Collecting URLs first prevents StaleElementReferenceException
-     * when we navigate away and back.
-     */
     private List<String> collectArticleUrls(int count) {
         List<String> urls = new ArrayList<>();
 
@@ -145,10 +135,7 @@ public class OpinionPage extends BasePage {
         return urls;
     }
 
-    /**
-     * Fallback URL collection using broader selectors.
-     * Used when primary locators don't match.
-     */
+
     private List<String> collectUrlsFallback(int count) {
         List<String> urls = new ArrayList<>();
         try {
@@ -173,9 +160,7 @@ public class OpinionPage extends BasePage {
         return urls;
     }
 
-    /**
-     * Navigates to an article page and extracts all data.
-     */
+
     private void scrapeArticleDetail(Article article) {
         logger.debug("Opening article: {}", article.getArticleUrl());
         driver.get(article.getArticleUrl());
@@ -384,14 +369,7 @@ public class OpinionPage extends BasePage {
         }
     }
 
-    /**
-     * Resolves the real image URL from src/data-src/srcset.
-     * Strictly rejects:
-     *  - SVG files (logos, icons)
-     *  - base64 data URIs
-     *  - blank/null values
-     *  - tracking pixels (< 10px implied by 1x1 patterns)
-     */
+
     private String resolveRealImageUrl(String src,
                                        String dataSrc,
                                        String srcset) {
@@ -410,10 +388,7 @@ public class OpinionPage extends BasePage {
         return null;
     }
 
-    /**
-     * Returns true only for real photo URLs.
-     * Rejects SVGs, data URIs, blanks, and relative paths.
-     */
+
     private boolean isValidImageUrl(String url) {
         if (url == null || url.isBlank()) return false;
         if (url.startsWith("data:"))      return false;  // base64

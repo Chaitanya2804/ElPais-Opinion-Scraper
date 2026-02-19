@@ -5,11 +5,7 @@ import com.assignment.scrapping.utils.WaitUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-/**
- * Page Object for El País Home Page.
- * Handles: navigation, cookie consent, language check,
- * and navigating to Opinion section.
- */
+
 public class HomePage extends BasePage {
 
     private final ConfigManager config = ConfigManager.getInstance();
@@ -38,20 +34,13 @@ public class HomePage extends BasePage {
 
     // ── Actions ──────────────────────────────────────
 
-    /**
-     * Opens El País home page and handles cookie banner.
-     */
     public HomePage open() {
         navigateTo(config.getAppUrl());
         handleCookieConsent();
         return this;
     }
 
-    /**
-     * Dismisses cookie/GDPR consent banner if present.
-     * El País shows this on first visit — must be handled
-     * before any other interaction.
-     */
+
     public void handleCookieConsent() {
         logger.info("Checking for cookie consent banner...");
 
@@ -62,17 +51,12 @@ public class HomePage extends BasePage {
         WaitUtil.dismissOverlayIfPresent(driver, COOKIE_ACCEPT_ALT);
     }
 
-    /**
-     * Verifies the page is displayed in Spanish via <html lang="es">.
-     */
+
     public boolean isInSpanish() {
         return isPageInLanguage(config.get("app.language.expected", "es"));
     }
 
-    /**
-     * Clicks the Opinion section link in main navigation.
-     * Returns OpinionPage for fluent page chaining.
-     */
+
     public OpinionPage navigateToOpinion() {
         logger.info("Navigating to Opinion section...");
 
@@ -104,9 +88,7 @@ public class HomePage extends BasePage {
         return new OpinionPage(driver);
     }
 
-    /**
-     * Detects if running on a mobile device by checking capabilities.
-     */
+
     private boolean isMobileDevice() {
         try {
             if (driver instanceof org.openqa.selenium.remote.RemoteWebDriver) {

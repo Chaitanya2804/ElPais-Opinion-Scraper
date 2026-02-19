@@ -22,13 +22,7 @@ public class CapabilityFactory {
 
     private CapabilityFactory() {}
 
-    /**
-     * Builds capabilities based on the platform parameter
-     * passed from TestNG XML via @Parameter.
-     *
-     * @param platform  e.g. "windows_chrome", "mac_safari", "iphone", "android"
-     * @return          DesiredCapabilities ready for RemoteWebDriver
-     */
+
     public static DesiredCapabilities getCapabilities(String platform) {
         logger.info("Building capabilities for platform: {}", platform);
 
@@ -53,7 +47,7 @@ public class CapabilityFactory {
 
         switch (platform.toLowerCase()) {
 
-            // ── Windows + Chrome ─────────────────────
+
             case "windows_chrome" -> {
                 caps.setCapability("browserName", "Chrome");
                 caps.setCapability("browserVersion", "latest");
@@ -62,7 +56,7 @@ public class CapabilityFactory {
                 bstackOptions.put("sessionName", "ElPais-Windows-Chrome");
             }
 
-            // ── Windows + Firefox ────────────────────
+
             case "windows_firefox" -> {
                 caps.setCapability("browserName", "Firefox");
                 caps.setCapability("browserVersion", "latest");
@@ -71,7 +65,7 @@ public class CapabilityFactory {
                 bstackOptions.put("sessionName", "ElPais-Windows-Firefox");
             }
 
-            // ── macOS + Safari ───────────────────────
+
             case "mac_safari" -> {
                 caps.setCapability("browserName", "Safari");
                 caps.setCapability("browserVersion", "18.0");
@@ -80,7 +74,7 @@ public class CapabilityFactory {
                 bstackOptions.put("sessionName", "ElPais-macOS-Safari");
             }
 
-            // ── iPhone (Real Device) ─────────────────
+
             case "iphone" -> {
                 bstackOptions.put("deviceName",   "iPhone 14");
                 bstackOptions.put("osVersion",     "17");
@@ -90,7 +84,7 @@ public class CapabilityFactory {
                 caps.setCapability("browserName", "Safari");
             }
 
-            // ── Android (Real Device) ────────────────
+
             case "android" -> {
                 bstackOptions.put("deviceName",   "Samsung Galaxy S22");
                 bstackOptions.put("osVersion",     "13.0");

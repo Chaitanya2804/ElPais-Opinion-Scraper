@@ -1,6 +1,6 @@
 {
   "thread" : "41",
-  "timestamp" : "2026-02-19T14:40:10.681487",
+  "timestamp" : "2026-02-19T15:40:37.814363",
   "articles" : [ {
     "index" : 1,
     "titleSpanish" : "Caiga quien caiga",
@@ -12,7 +12,7 @@
   }, {
     "index" : 2,
     "titleSpanish" : "Negar un techo por el color de piel",
-    "titleEnglish" : "Denying a roof because of skin color",
+    "titleEnglish" : "[TRANSLATION FAILED] Negar un techo por el color de piel",
     "content" : "El racismo en el alquiler de viviendas es una perversa combinación de dos de los mayores problemas que ponen en riesgo la convivencia social: la crisis habitacional y el avance del discurso antinmigración. El problema que más preocupa a los españoles, según el CIS, es la vivienda, que se ha encarecido un 70% en los últimos 10 años. Un coste al que hay que sumar las exigencias añadidas que sufren los inmigrantes a la hora de alquilar: el 99% de las agencias inmobiliarias aceptan cláusulas racistas de los propietarios, según datos de Provivienda de 2025, especialmente contra personas de África, Asia y Latinoamérica. Es la tormenta perfecta para gran parte de los ciudadanos procedentes de otros países, que suponen ya la quinta parte de nuestra sociedad (10 millones, sobre una población de 49,5 millones). La discriminación en el alquiler impide su integración social y laboral, y los condena a habitar en zonas convertidas en guetos, que a su vez realimentan los prejuicios.",
     "imageUrl" : "https://imagenes.elpais.com/resizer/v2/MLJILORPLNEVBLUZVX3E5R6FZY.jpg?auth=5d2ed914530487c80efa8dccb15be4c2997533761ae4ef948295fec6f95aa71c&width=414",
     "localImagePath" : "output/images/article_2_cover.jpg",
@@ -20,7 +20,7 @@
   }, {
     "index" : 3,
     "titleSpanish" : "La clase media no es un invento facha",
-    "titleEnglish" : "The middle class is not a façade invention",
+    "titleEnglish" : "[TRANSLATION FAILED] La clase media no es un invento facha",
     "content" : "Se ha puesto de moda negar que la clase media haya existido alguna vez en España. Algunos dirán que todo es clase obrera; algunos, porque son ciudadanos que dependen de su trabajo, y otros, que es porque no poseen los medios de producción. El sistema tiende a negarle a la gente aquello que ya no puede ofrecerle. La realidad es que si hoy la Constitución de 1978 se ve impugnada por el auge de la ultraderecha es porque —probablemente— los ideales clasemedieros alguna vez existieron en nuestro país de forma más realista que ahora....\nSuscríbete para seguir leyendo\nLee sin límites\nSEGUIR LEYENDO\nYa soy suscriptor",
     "imageUrl" : "https://imagenes.elpais.com/resizer/v2/EQTZF2ELPRNUVJVDONJOI3HKRQ.jpg?auth=be4d3e34cedc6702e588a75e47eb388316062e72fcd1a9c8f9e3b9415fce5288&width=414",
     "localImagePath" : "output/images/article_3_cover.jpg",
@@ -36,7 +36,7 @@
   }, {
     "index" : 5,
     "titleSpanish" : "‘Moteras iraníes’",
-    "titleEnglish" : "'Iranian bikers'",
+    "titleEnglish" : "[TRANSLATION FAILED] ‘Moteras iraníes’",
     "content" : "[Article Preview — Full content behind paywall]\n\nEn Irán, las mujeres no tienen reconocido oficialmente el derecho a conducir motocicletas y, por tanto, no se les conceden permisos. Aun así, las iraníes llevan años plantando cara a estas restricciones. Durante décadas han convertido sus propios cuerpos en herramientas de resistencia; cada vez que se suben a una moto toman una decisión consciente de traspasar los límites impuestos en nombre de la ley, la tradición o el miedo",
     "imageUrl" : "https://imagenes.elpais.com/resizer/v2/RMHO45HCOZGJTD6U2ADLKGCBOE.jpg?auth=71032ebfcd95e60e8ac13a7fe0186ee7407b059524de990d3c3e4265bc971e25&width=414",
     "localImagePath" : "output/images/article_5_cover.jpg",

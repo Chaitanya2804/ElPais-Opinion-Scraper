@@ -15,16 +15,7 @@ import org.openqa.selenium.PageLoadStrategy;
 import java.net.URI;
 import java.time.Duration;
 
-/**
- * Thread-safe WebDriver manager using ThreadLocal.
- *
- * WHY ThreadLocal?
- * In parallel execution, each TestNG thread needs its OWN driver instance.
- * ThreadLocal guarantees each thread reads/writes only its own variable.
- * Without this, threads would overwrite each other's drivers → race conditions.
- *
- * LIFECYCLE: setDriver() in @BeforeMethod → getDriver() in tests → quit() in @AfterMethod
- */
+
 public class DriverManager {
 
     private static final Logger logger = LogManager.getLogger(DriverManager.class);
@@ -52,12 +43,7 @@ public class DriverManager {
         logger.info("Driver set for thread: {}", Thread.currentThread().getName());
     }
 
-    // ── Driver Factory ───────────────────────────────
 
-    /**
-     * Creates a local WebDriver based on browser name.
-     * Selenium 4.6+ handles driver binaries automatically.
-     */
     public static WebDriver createLocalDriver(String browser) {
         logger.info("Creating local driver: {}", browser);
 
@@ -88,10 +74,7 @@ public class DriverManager {
         return driver;
     }
 
-    /**
-     * Creates a RemoteWebDriver connected to BrowserStack hub.
-     * Capabilities are injected by CapabilityFactory.
-     */
+
     public static WebDriver createRemoteDriver(
             org.openqa.selenium.remote.DesiredCapabilities capabilities) {
         try {
@@ -115,10 +98,7 @@ public class DriverManager {
 
     // ── Teardown ─────────────────────────────────────
 
-    /**
-     * Quits the driver and removes it from ThreadLocal.
-     * MUST be called in @AfterMethod to prevent memory leaks.
-     */
+
     public static void quitDriver() {
         WebDriver driver = driverThreadLocal.get();
         if (driver != null) {

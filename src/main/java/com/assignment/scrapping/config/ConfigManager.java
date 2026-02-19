@@ -8,12 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-/**
- * Singleton configuration manager.
- * Loads config.properties for app settings.
- * Loads .env for sensitive credentials.
- * All other classes use this — never read files directly.
- */
+
 public class ConfigManager {
 
     private static final Logger logger = LogManager.getLogger(ConfigManager.class);
@@ -55,7 +50,7 @@ public class ConfigManager {
         }
     }
 
-    // ── Property Getters ─────────────────────────────
+
 
     /** Gets value from config.properties */
     public String get(String key) {
@@ -84,7 +79,7 @@ public class ConfigManager {
         }
     }
 
-    // ── Credential Getters (from .env) ───────────────
+
 
     /** Gets value from .env file or System environment */
     public String getEnv(String key) {
@@ -99,7 +94,7 @@ public class ConfigManager {
         return dotVal;
     }
 
-    // ── Convenience Methods ──────────────────────────
+
 
     public String getAppUrl()           { return get("app.url"); }
     public String getOpinionPath()      { return get("opinion.section.path"); }

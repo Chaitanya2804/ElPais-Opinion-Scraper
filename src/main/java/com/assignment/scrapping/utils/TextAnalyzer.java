@@ -6,10 +6,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * Analyzes translated titles for word frequency.
- * Normalizes text, counts words, finds repeats > 2.
- */
+
 public class TextAnalyzer {
 
     private static final Logger logger = LogManager.getLogger(TextAnalyzer.class);
@@ -26,15 +23,7 @@ public class TextAnalyzer {
 
     private TextAnalyzer() {}
 
-    /**
-     * Main analysis method.
-     * Takes a list of translated titles, normalizes them,
-     * counts word frequency across all titles,
-     * and returns words appearing more than twice.
-     *
-     * @param titles  List of English-translated article titles
-     * @return        Map of word → count, only words with count > 2
-     */
+
     public static Map<String, Integer> analyzeWordFrequency(List<String> titles) {
         logger.info("Analyzing word frequency across {} titles.", titles.size());
 
@@ -70,9 +59,7 @@ public class TextAnalyzer {
         return repeated;
     }
 
-    /**
-     * Same as analyzeWordFrequency but excludes common stop words.
-     */
+
     public static Map<String, Integer> analyzeWordFrequencyFiltered(
             List<String> titles) {
         Map<String, Integer> raw = analyzeWordFrequency(titles);
@@ -86,12 +73,7 @@ public class TextAnalyzer {
                 ));
     }
 
-    /**
-     * Normalizes text:
-     * 1. Lowercase
-     * 2. Remove punctuation (keeps only letters, digits, spaces)
-     * 3. Collapse multiple spaces
-     */
+
     public static String normalize(String text) {
         if (text == null) return "";
         return text.toLowerCase()
@@ -100,7 +82,6 @@ public class TextAnalyzer {
                 .trim();
     }
 
-    /** Returns total unique word count from a list of texts */
     public static int uniqueWordCount(List<String> texts) {
         String combined = String.join(" ", texts);
         String[] words = normalize(combined).split("\\s+");

@@ -10,11 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-/**
- * Centralized wait utility.
- * Always use these instead of Thread.sleep().
- * Timeout values come from ConfigManager — never hardcoded.
- */
+
 public class WaitUtil {
 
     private static final Logger logger = LogManager.getLogger(WaitUtil.class);
@@ -32,21 +28,18 @@ public class WaitUtil {
         return new WebDriverWait(driver, Duration.ofSeconds(seconds));
     }
 
-    /** Wait until element is visible */
     public static WebElement waitForVisibility(WebDriver driver, By locator) {
         logger.debug("Waiting for visibility: {}", locator);
         return getWait(driver).until(
                 ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    /** Wait until element is clickable */
     public static WebElement waitForClickable(WebDriver driver, By locator) {
         logger.debug("Waiting for clickable: {}", locator);
         return getWait(driver).until(
                 ExpectedConditions.elementToBeClickable(locator));
     }
 
-    /** Wait for all elements matching locator to be visible */
     public static List<WebElement> waitForAllVisible(
             WebDriver driver, By locator) {
         logger.debug("Waiting for all elements: {}", locator);
@@ -54,13 +47,11 @@ public class WaitUtil {
                 ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
     }
 
-    /** Wait until element is present in DOM (not necessarily visible) */
     public static WebElement waitForPresence(WebDriver driver, By locator) {
         return getWait(driver).until(
                 ExpectedConditions.presenceOfElementLocated(locator));
     }
 
-    /** Wait for page to finish loading via document.readyState */
     public static void waitForPageLoad(WebDriver driver) {
         logger.debug("Waiting for page load...");
         try {
@@ -79,7 +70,6 @@ public class WaitUtil {
         }
     }
 
-    /** Safe find — returns null instead of throwing if not found */
     public static WebElement findSafe(WebDriver driver, By locator) {
         try {
             return driver.findElement(locator);
@@ -89,14 +79,12 @@ public class WaitUtil {
         }
     }
 
-    /** Scroll element into view using JS */
     public static void scrollIntoView(WebDriver driver, WebElement element) {
         ((JavascriptExecutor) driver)
                 .executeScript("arguments[0].scrollIntoView(true);", element);
         try { Thread.sleep(300); } catch (InterruptedException ignored) {}
     }
 
-    /** Dismiss cookie banner or overlay if present */
     public static void dismissOverlayIfPresent(
             WebDriver driver, By overlayLocator) {
         try {

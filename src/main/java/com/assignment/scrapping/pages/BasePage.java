@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * Abstract base for all Page Objects.
- * Provides shared WebDriver reference and common interaction helpers.
+ * For shared WebDriver reference and common interaction helpers.
  * Every page class extends this — never instantiate directly.
  */
 public abstract class BasePage {
@@ -25,7 +25,7 @@ public abstract class BasePage {
         this.driver = driver;
     }
 
-    // ── Navigation ───────────────────────────────────
+
 
     protected void navigateTo(String url) {
         logger.info("Navigating to: {}", url);
